@@ -1,10 +1,10 @@
 import { Account, AleoKeyProvider, AleoNetworkClient, NetworkRecordProvider, ProgramManager } from '@aleohq/sdk';
 
 const account = new Account({
-  privateKey: "your_key",
+  privateKey: process.env.PKEY,
 });
 
-const nodeBaseUrl = `https://api.explorer.aleo.org/v1`;
+const nodeBaseUrl = 'https://explorer.hamp.app';//`https://api.explorer.aleo.org/v1`;
 const apiBaseUrl = `${nodeBaseUrl}/testnet3`;
 
 const programId = "cypher_nm01.aleo";
