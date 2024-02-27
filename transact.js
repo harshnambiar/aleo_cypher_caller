@@ -4,7 +4,7 @@ const account = new Account({
   privateKey: process.env.PKEY,
 });
 
-const nodeBaseUrl = 'https://explorer.hamp.app';//`https://api.explorer.aleo.org/v1`;
+const nodeBaseUrl = `https://api.explorer.aleo.org/v1`;
 const apiBaseUrl = `${nodeBaseUrl}/testnet3`;
 
 const programId = "cypher_nm01.aleo";
@@ -28,8 +28,3 @@ const transaction = await programManager.networkClient.getTransaction(tx_id);
 console.log(transaction);
 
 
-
-//const mappingName = "codes";
-//const mappingKey = "10u64";
-// Here we fecth the value of the mapping
-//const mappingValue = await getMappingValue(programId, mappingName, mappingKey);
